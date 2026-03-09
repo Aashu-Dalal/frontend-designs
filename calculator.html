@@ -17,6 +17,8 @@
             margin: 8px;
             border: gray solid 2px;
             border-radius: 5px;
+            font-size: 25px;
+            text-align: right;
         }
         .container {
             width: 350px;
@@ -92,7 +94,46 @@
             <button class="btn arithmetic">=</button>
         </div>
     </div>
+<script>
+    // Calculator functionality would go here
+    let screen = document.getElementById('screen');
+    let buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            let value = button.textContent;
+            if (value === 'CE') {
+                screen.value = '';
+            } else if (value === '⌫') {
+                screen.value = screen.value.slice(0, -1);
+            } else if (value === '=') {
+                try {
+                    // Replace 'X' with '*' for multiplication
+                    let expression = screen.value.replace(/X/g, '*');
+                    screen.value = eval(expression);
+                } catch (e) {
+                    screen.value = 'Error';
+                }
+            } else if (value === '^2') {
+                try {
+                    let num = parseFloat(screen.value);
+                    screen.value = num * num;
+                } catch (e) {
+                    screen.value = 'Error';
+                }
+            } else if (value === '√x') {
+                try {
+                    let num = parseFloat(screen.value);
+                    screen.value = Math.sqrt(num);
+                } catch (e) {
+                    screen.value = 'Error';
+                }
+            } else {
+                screen.value += value;
+            }
+        });
+    });
 
+</script>
 </body>
 
 </html>
