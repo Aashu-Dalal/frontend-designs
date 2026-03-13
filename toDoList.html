@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>To Do List</h2>
+        <input type="text" id="task" placeholder="Enter Your Task"><button id="addbtn">Add</button><br><br>
+        <div id="taskList"></div>
+    </div>
+</body>
+<script>
+    let task = document.getElementById("task");
+    let addbtn = document.getElementById("addbtn");
+    let taskList = document.getElementById("taskList");
+
+    let tasks = () => {
+    let taskValue = task.value;
+
+    let newTask = document.createElement("div");
+
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    newTask.appendChild(checkbox);   
+    newTask.append(" " + taskValue); 
+
+    taskList.appendChild(newTask);
+
+    task.value = "";
+}
+
+    addbtn.addEventListener("click", tasks);
+</script>
+</html>
