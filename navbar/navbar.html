@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav Bar</title>
     <style>
-        .logo img{
+        .logo img {
             height: 56px;
-            width: 160px;
+            width: auto;
         }
-        nav{
+
+        nav {
             display: flex;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        .right ul{
+
+        .left ul,
+        .right ul {
             display: flex;
         }
-        .right ul li{
+
+        .left ul li,
+        .right ul li {
             list-style: none;
             margin: 0 10px;
         }
+
+        nav button {
+            background-color: #f7d038;
+            border-radius: 6px;
+            height: 32px;
+            border: none;
+            padding: 0 14px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="logo.png" alt="Logo" ></div>
-            <div class="right">
+            <div class="logo"><img src="logo.png" alt="Logo"></div>
+            <div class="left">
                 <ul>
                     <li>Product</li>
                     <li>Buy</li>
@@ -36,7 +59,15 @@
                     <li>Company</li>
                 </ul>
             </div>
+            <div class="right">
+                <ul>
+                    <li><button>Download</button></li>
+                    <li>English</li>
+                    <li>Search</li>
+                </ul>
+            </div>
         </nav>
     </header>
 </body>
+
 </html>
