@@ -16,7 +16,8 @@
             background-repeat: no-repeat;
             height: 100vh;
         }
-        .app{
+
+        .app {
             color: rgb(15, 31, 52);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -47,7 +48,8 @@
             margin-top: 20px;
             font-size: 18px;
         }
-        .search{
+
+        .search {
             box-sizing: border-box;
         }
     </style>
@@ -67,7 +69,12 @@
     <script>
         let btn = document.getElementById("btn");
         let container = document.getElementById("container");
-        
+        let cityInput = document.getElementById("city");
+
+        btn.addEventListener("click", () => {
+            let city = cityInput.value;
+            console.log(city);
+        });
     </script>
 </body>
 
