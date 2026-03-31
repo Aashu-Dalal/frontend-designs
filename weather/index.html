@@ -67,13 +67,26 @@
         <div id="container"></div>
     </div>
     <script>
+
+        let cityInput = document.getElementById("city");
         let btn = document.getElementById("btn");
         let container = document.getElementById("container");
-        let cityInput = document.getElementById("city");
+
+        const apiKey = "YOUR_API_KEY";
 
         btn.addEventListener("click", () => {
             let city = cityInput.value;
-            console.log(city);
+
+            container.innerHTML = "Loading...";
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(() => {
+                    container.innerHTML = "Error fetching data";
+                });
         });
     </script>
 </body>
