@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
 }
 .main{
     background-image: url(bg.jpg);
@@ -16,12 +16,24 @@
     position: absolute;
     top: 0;
 }
-.main nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .main ul{
     display: flex;
     list-style: none;
+}
+nav{
+    background-color: red;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav span{
+    
+    padding: 0 20%;
+}
+nav img{
+    height: 100px;
+    width: 60px;
+    color: red;
 }
