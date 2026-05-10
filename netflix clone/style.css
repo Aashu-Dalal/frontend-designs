@@ -21,7 +21,7 @@
     list-style: none;
 }
 nav{
-    background-color: red;
+    /* background-color: red; */
     height: 70px;
     
 }
@@ -30,10 +30,27 @@ nav span{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20%;
+    padding: 0 10%;
 }
 nav img{
     height: 100px;
     width: 60px;
-    color: red;
+}
+nav ul{
+    gap: 15px;
+}
+nav button{
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+}
+.lang{
+    background-color:transparent ;
+    border: gray 1px solid;
+    color: white;
+}
+.signIn{
+    background-color: red;
+    color: white;
 }
