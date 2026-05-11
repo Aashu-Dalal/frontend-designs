@@ -54,3 +54,8 @@ nav button{
     background-color: red;
     color: white;
 }
+.signIn:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
