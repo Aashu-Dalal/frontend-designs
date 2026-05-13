@@ -26,6 +26,8 @@ body{
 nav{
     /* background-color: red; */
     height: 70px;
+    position: relative;
+    z-index: 1;
     
 }
 nav span{
@@ -58,7 +60,6 @@ nav button{
     color: white;
 }
 .signIn:hover{
-    background-color: white;
-    color: red;
+    opacity: 0.8;
     cursor: pointer;
 }
