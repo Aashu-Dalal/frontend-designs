@@ -9,6 +9,9 @@ body{
 .main{
     background-image: url(bg.jpg);
     height: 95vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
 }
 .main .box{
@@ -24,7 +27,7 @@ body{
     list-style: none;
 }
 nav{
-    /* background-color: red; */
+    width: 90vw;
     height: 70px;
     position: relative;
     z-index: 1;
