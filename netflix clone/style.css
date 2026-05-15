@@ -62,6 +62,10 @@ nav button{
     background-color: red;
     color: white;
 }
+.lang:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 .signIn:hover{
     opacity: 0.8;
     cursor: pointer;
