@@ -70,3 +70,14 @@ nav button{
     opacity: 0.8;
     cursor: pointer;
 }
+.title{
+    font-family: sans-serif;
+    font-size: 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(95vh - 70px);
+    position: relative;
+}
