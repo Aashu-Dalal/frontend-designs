@@ -94,6 +94,7 @@ nav button{
 }
 .email{
     display: flex;
+    
 }
 .email button{
     background-color: red;
