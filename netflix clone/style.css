@@ -131,19 +131,46 @@ nav button{
 
 .movies{
     display: flex;
-    /* flex-wrap: nowrap; */
+    flex-wrap: nowrap;
     overflow-x: scroll;
 }
 
 .card{
     padding: 20px;
-    height: 150px;
-    width: 250px;
+    height: 250px;
+    width: 150px;
     background-color: gray;
     margin: 10px;
     border-radius: 5px;
     background-size: cover;
 }
 .card1{
-    background-image: url(dhurandar.png);
+    background-image: url(movie1.png);
+}
+.card2{
+    background-image: url(movie2.webp);
+}
+.card3{
+    background-image: url(movie3.webp);
+}
+.card4{
+    background-image: url(movie4.jpg);
+}
+.card5{
+    background-image: url(movie5.png);
+}
+.card6{
+    background-image: url(movie6.webp);
+}
+.card7{
+    background-image: url(movie7.avif);
+}
+.card8{
+    background-image: url(movie8.avif);
+}
+.card9{
+    background-image: url(movie9.jpg);
+}
+.card10{
+    background-image: url(movie10.jpg);
 }
