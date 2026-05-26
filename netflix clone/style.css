@@ -130,47 +130,77 @@ nav button{
 }
 
 .movies{
+    margin: 0 80px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
+.trending h2{
+    font-family: 'poppins';
+    color: white;
+    margin: 15px 80px;
+}
 
 .card{
+    flex-shrink: 0;
     padding: 20px;
-    height: 250px;
-    width: 150px;
+    height: 150px;
+    width: 100px;
     background-color: gray;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: 9px;
     background-size: cover;
 }
 .card1{
-    background-image: url(movie1.png);
+    background-image: url(movies/movie1.png);
+    background-position: center center;
 }
 .card2{
-    background-image: url(movie2.webp);
+    background-image: url(movies/movie2.webp);
+    background-position: center center; 
 }
 .card3{
-    background-image: url(movie3.webp);
+    background-image: url(movies/movie3.webp);
+    background-position: center center;
 }
 .card4{
-    background-image: url(movie4.jpg);
+    background-image: url(movies/movie4.jpg);
+    background-position: center center;
 }
 .card5{
-    background-image: url(movie5.png);
+    background-image: url(movies/movie5.png);
+    background-position: center center;
 }
 .card6{
-    background-image: url(movie6.webp);
+    background-image: url(movies/movie6.webp);
+    background-position: center center;
 }
 .card7{
-    background-image: url(movie7.avif);
+    background-image: url(movies/movie7.avif);
+    background-position: center center;
 }
 .card8{
-    background-image: url(movie8.avif);
+    background-image: url(movies/movie8.avif);
+    background-position: center center;
 }
 .card9{
-    background-image: url(movie9.jpg);
+    background-image: url(movies/movie9.jpg);
+    background-position: center center;
 }
 .card10{
-    background-image: url(movie10.jpg);
+    background-image: url(movies/movie10.jpg);
+    background-position: center center;
+}
+.reasonCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 80px;
+}
+.reasonCard{
+    background: linear-gradient(45deg, #1B1C38,#20111F);
+    border-radius: 13px;
+    color:white;
+    width: 500px;
+    height: 200px;
+    margin: 20px;
 }
