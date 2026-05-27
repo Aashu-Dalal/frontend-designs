@@ -191,16 +191,33 @@ nav button{
     background-image: url(movies/movie10.jpg);
     background-position: center center;
 }
+.reason h2{
+    font-family: 'poppins';
+    color: white;
+    margin: 15px 80px;
+}
 .reasonCards{
     display: flex;
     flex-wrap: wrap;
     margin: 0 80px;
 }
 .reasonCard{
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: 'poppins';
     background: linear-gradient(45deg, #1B1C38,#20111F);
     border-radius: 13px;
     color:white;
     width: 500px;
     height: 200px;
     margin: 20px;
+}
+.reasonCard .head{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.reasonCard .content{
+    color: rgb(186, 185, 185);
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
