@@ -210,7 +210,7 @@ nav button{
     color:white;
     width: 500px;
     height: 200px;
-    margin: 20px;
+    margin: 10px;
 }
 .reasonCard .head{
     font-size: 1.2em;
@@ -220,4 +220,20 @@ nav button{
     color: rgb(186, 185, 185);
     font-size: 0.9rem;
     margin-top: 10px;
+}
+.faqCard .head{
+    width: 90%;
+    height: 80px;
+    background-color: #2d2d2d;
+    margin: 10px 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    font-size: 1.3em;
+    padding: 0 20px;
+}
+.faqCard .head:hover{
+    cursor: pointer;
+    background-color: #3d3d3d;
 }
