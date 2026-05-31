@@ -86,7 +86,7 @@ nav button{
 }
 .title .titlename{
     padding: 0 ;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
 }
 .title .label{
@@ -267,4 +267,24 @@ nav button{
 
 .footerLinks li a{
     color: rgb(186, 185, 185);
+}
+
+.langbtn{
+    margin: 20px 80px;
+}
+.langbtn button{
+    padding: 10px;
+    border-radius: 4px;
+
+}
+.name{
+    margin: 20px 80px;
+    color: white;
+}
+
+.disclaimer{
+    color: rgb(158, 156, 156);
+    font-size: 0.8em;
+    margin: 40px 80px;
+    margin-bottom: 120px;
 }
