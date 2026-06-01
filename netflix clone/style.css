@@ -45,7 +45,6 @@ nav span{
 }
 nav img{
     height: 60px;
-    /* width: 60px; */
 }
 nav ul{
     gap: 15px;
@@ -60,6 +59,12 @@ nav button{
     background-color:transparent ;
     border: gray 1px solid;
     color: white;
+    gap: 5px;
+    display: flex;
+}
+.lang img{
+    height: 20px;
+    filter:invert(1);
 }
 .signIn{
     background-color: red;
@@ -117,23 +122,34 @@ nav button{
     padding-left: 10px;
     font-size: 16px;
 }
+.startbtn{
+    display: flex;
+    align-items: center;
+}
+.email img{
+    filter: invert(1);
+}
 
 .email button{
     background-color: red;
-    color: white;
+    color: rgb(224, 222, 222);
     padding: 8px;
     border-radius: 8px;
     width: 18vw;
+    display: flex;
+    gap: 10px;
     height: 55px;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .movies{
     margin: 0 80px;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 .trending h2{
     color: white;
@@ -145,10 +161,13 @@ nav button{
     padding: 20px;
     height: 150px;
     width: 100px;
-    background-color: gray;
+    scroll-snap-align: start;
     margin: 20px;
     border-radius: 9px;
     background-size: cover;
+}
+.movies::-webkit-scrollbar{
+    display: none;
 }
 .card1{
     background-image: url(movies/movie1.png);
@@ -254,6 +273,16 @@ nav button{
     color: white;
     font-size: 1em;
 }
+footer p{
+    margin: 40px 80px;
+}
+footer span{
+    color: rgb(186, 185, 185);
+    font-size: 1em;
+}
+footer span a{
+    color: rgb(186, 185, 185);
+}
 .footerLinks{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -285,6 +314,5 @@ nav button{
 .disclaimer{
     color: rgb(158, 156, 156);
     font-size: 0.8em;
-    margin: 40px 80px;
     margin-bottom: 120px;
 }
