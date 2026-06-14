@@ -391,3 +391,43 @@ nav ul li {
 .artist10{
     background-image: url("/artists/udit.jpg");
 }
+
+.albums {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.albums .album {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+.album1{
+    background-image: url("/albums/album1.jpg");
+}
+.album2{
+    background-image: url("/albums/album2.jpg");
+}
+.album3{
+    background-image: url("/albums/album3.jpg");
+}
+.album4{
+    background-image: url("/albums/album4.jpg");
+}
+.album5{
+    background-image: url("/albums/album5.jpg");
+}
+.album6{
+    background-image: url("/albums/album6.jpg");
+}
+.album7{
+    background-image: url("/albums/album7.jpg");
+}
+.album8{
+    background-image: url("/albums/album8.jpg");
+}
+.album9{
+    background-image: url("/albums/album9.jpg");
+}
